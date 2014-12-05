@@ -1,0 +1,32 @@
+{
+  "name": "grunt-amdify",
+  "version": "0.0.1",
+  "description": "Wrap CommonJs modules in AMD",
+  "homepage": "https://github.com/ePages-de/grunt-amdify",
+  "repository": "https://github.com/ePages-de/grunt-amdify",
+  "author": {
+    "name": "Erik Mueller",
+    "email": "emueller@epages.com"
+  },
+  "keywords": [
+    "gruntplugin, amd, commonjs, wrap, admify"
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "audit": "git://github.com/erikmueller/audit.git",
+    "chalk": "^0.5.1",
+    "coffeelint": "^1.1.0",
+    "coffeelint-newline-at-eof": "^0.4.1",
+    "grunt": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-coffeelint": "0.0.13",
+    "grunt-contrib-nodeunit": "~0.3.0",
+    "load-grunt-tasks": "~0.3.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
