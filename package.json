@@ -15,9 +15,11 @@
     "node": ">= 0.8.0"
   },
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "audit": "git://github.com/erikmueller/audit.git",
-    "chalk": "^0.5.1",
+    "chalk": "^0.5.1"
+  },
+  "devDependencies": {
     "coffeelint": "^1.1.0",
     "coffeelint-newline-at-eof": "^0.4.1",
     "grunt": "~0.4.2",
