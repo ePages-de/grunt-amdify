@@ -15,21 +15,10 @@ module.exports = (grunt) ->
         # Before generating any new files, remove any previously-created files.
         clean: ['tmp']
 
-        # Configuration to be run (and then tested).
-        amdify: default_target: files: [{
-
-        }]
-
-        # Unit tests.
-        nodeunit: ['test/*-test.js']
-
-    # Actually load this plugin's task(s).
-    grunt.loadTasks 'tasks'
-
-    # Whenever the "test" task is run, first clean the "tmp" dir, then run this
-    # plugin's task(s), then test the result.
-    grunt.registerTask 'test', ['clean', 'amdify', 'nodeunit']
+        coffeelint:
+            options: configFile: '.coffeelintrc'
+            files: 'tasks/*'
 
     # By default, lint and run all tests.
-    grunt.registerTask 'default', ['jshint', 'test']
+    grunt.registerTask 'default', ['coffeelint']
 

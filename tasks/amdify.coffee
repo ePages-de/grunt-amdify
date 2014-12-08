@@ -14,7 +14,9 @@ module.exports = (grunt) ->
     colors = require 'chalk'
 
     grunt.task.registerMultiTask('amdify', 'use audit to wrap commonjs modules to AMD', ->
+        options = @options()
+
         @files.forEach (file) ->
-            grunt.file.write file.dest, amdify grunt.file.read file.src[0]
-            grunt.log.ok colors.magenta('amdified'), file.src[0], '=>', file.dest
+            grunt.log.writeln colors.magenta('[amdify] ') + colors.cyan(file.src[0]) + ' => ' + colors.cyan(file.dest)
+            grunt.file.write file.dest, amdify(grunt.file.read(file.src[0]), options)
     )

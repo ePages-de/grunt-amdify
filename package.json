@@ -25,10 +25,6 @@
     "grunt": "~0.4.2",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-coffeelint": "0.0.13",
-    "grunt-contrib-nodeunit": "~0.3.0",
     "load-grunt-tasks": "~0.3.0"
-  },
-  "scripts": {
-    "test": "grunt test"
   }
 }
